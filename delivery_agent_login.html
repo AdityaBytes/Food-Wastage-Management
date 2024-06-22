@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delivery Agent Login</title>
+    <link rel="stylesheet" href="css/style.css"> <!-- Link to your stylesheet -->
+</head>
+<body>
+
+<div class="container">
+    <h2>Delivery Agent Login</h2>
+    
+    <form action="./delivery_agent_login.php" method="GET" id="deliveryAgentLoginForm">
+        
+        <div class="form-group">
+            <label for="agentName">Agent Name:</label>
+            <input type="text" id="agentName" name="agentName" required>
+        </div>
+
+        <div class="form-group">
+            <label for="contactNo">Contact No.:</label>
+            <input type="tel" id="contactNo" name="contactNo" pattern="[0-9]{10}" required>
+            <small>Format: 1234567890</small>
+        </div>
+
+        <div class="form-group">
+            <label for="vehicleNo">Vehicle No.:</label>
+            <input type="text" id="vehicleNo" name="vehicleNo" required>
+        </div>
+
+        <div class="form-group">
+            <input type="submit" value="Login">
+        </div>
+
+    </form>
+</div>
+
+</body>
+</html>

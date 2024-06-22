@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodYard | Saving Food</title>
+    <link rel="icon" href="./files/logo.png">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+   
+</head>
+<body>
+    <script>
+        // Smooth Scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+    
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    
+        // Dropdown Menu
+        document.addEventListener('DOMContentLoaded', function () {
+            const dropdownBtn = document.querySelector('.dropbtn');
+            const dropdownContent = document.querySelector('.dropdown-content');
+    
+            dropdownBtn.addEventListener('click', function () {
+                dropdownContent.classList.toggle('show');
+            });
+    
+            // Close the dropdown menu if the user clicks outside of it
+            window.addEventListener('click', function (event) {
+                if (!event.target.matches('.dropbtn')) {
+                    const dropdowns = document.getElementsByClassName('dropdown-content');
+                    for (let i = 0; i < dropdowns.length; i++) {
+                        const openDropdown = dropdowns[i];
+                        if (openDropdown.classList.contains('show')) {
+                            openDropdown.classList.remove('show');
+                        }
+                    }
+                }
+            });
+        });
+    </script>
+    
+
+<!-- Background & Header -->
+
+    <div class="banner">
+        <img src="./files/bg1.jpg">
+    
+    <!-- Header -->
+
+    <div class="content" id="home"> 
+        <nav>
+            <img src="./files/logo.png" class="logo" alt="Logo" title="FoodYard">
+            
+            <ul class="navbar">
+                <li>
+                    <a href="#">Home</a>
+                    <a href="#fwmanage">What We Do</a>
+                    <a href="./register.html">Get Involved</a>-
+                    <a href="./about.html">About Us</a>
+                    <a href="./contact.html">Contact Us</a>
+
+                    <div class="dropdown">
+                        <button class="dropbtn">Login</button>
+                        <div class="dropdown-content">
+                            <a href="donor_login.html">Donor Login</a>
+                            <a href="delivery_agent_login.html">Delivery Agent</a>
+                            <a href="reciever_login.html">Receiver</a>
+                        </div>
+                    </div>
+
+                </li>
+            </ul>
+        </nav>
+ 
+        <div class="title">
+            <h2>Welcome To </h2>
+            <h3>Food Wastage Reduction Platform</h3><br>
+            <p>“If you’re throwing away food, you’re throwing away life.” – Anthony Bourdain</p>
+            
+        </div>
+        </div>
+    </div>
+
+<!-- What is food waste? 
+
+<section class="container">
+    <div class="text">
+        <h2>What is Food Waste?</h2>
+    </div>
+    <div class="rowitems">
+        <div class="container-box">
+            <h4>Food waste is any type of food that is discarded or not eaten. It can include uneaten food from meals, spoiled food, trimmings from food preparation, and food products that have been damaged and deemed unfit for human consumption.</h4> 
+            <br><br><h2>Types of food waste:</h2><br>
+                <h4>1) Fruit and Vegetable waste <br>2) Beverage waste <br>3) Fish, Meat & Poultry waste <br>4) Sugar Industry waste <br>5) Dairy waste <br>6) Mineral waste <br>7) Oil residue waste</h4><br> <h4>Below are few images from the hostel mess of LPU.</h4>  <br>
+        </div>
+        <div id="service">
+            <div class="box">
+                <img src="./files/1.jpg" alt="" >
+            </div>
+            <div class="box">
+                <img src="./files/2.jpg" alt="">
+            </div>
+        </div>
+
+    </div>
+
+</section> -->
+
+<section id="services-container">
+    <h1 class="h-primary center">Our Services</h1>
+    <div id="services">
+        <div class="box">
+            <img src="img/1.png" alt="">
+            <h2 class="h-secondary center">Get in touch</h2>
+            <p class="center">Donors with surplus food/resources can 
+                reach at +91**********
+            </p>
+        </div>
+
+        <div class="box">
+            <img src="img/2.png" alt="">
+            <h2 class="h-secondary center">Quality check</h2>
+            <p class="center">Excess Food be checked based on our Food Safety and Standard Guidlines
+            </p>
+        </div>
+
+
+        <div class="box">
+            <img src="img/3.png" alt="">
+            <h2 class="h-secondary center">Deliver </h2>
+            <p class="center">Excess food is distributed to needy people with love.
+            </p>
+        </div>
+
+    </div>
+    
+</section>
+
+
+<!-- What is food waste management? -->
+
+<section class="fwmanage" id="fwmanage">
+    <div class="fwm-title">
+        <h2>What is food waste management system?</h2>
+    </div>
+
+    <div class="container-box">
+        
+        <h4>Food waste management systems are designed to reduce the amount of food waste
+             created by businesses and households. These systems typically involve practices 
+             such as composting, recycling, and anaerobic digestion. Additionally, food waste 
+             management systems often include education and awareness campaigns to help people 
+             understand how their food choices impact the environment. 
+             <br> <br>
+        Here, <span>Food Wastage Reduction</span> comes into picture. We came up with an initiative to reduce the food wastage and hunger as much as possible
+         with the goal of zero hunger and responsible consumption and production. We have our outlets in different parts of the country. 
+         We are in contact with some banquets. We collect the donated food and distribute it among the people who need it. <br> <br>
+        </h4>
+
+    </div>
+</section>
+
+
+<section class="fwm" id="fwm">
+    <div class="fwm-title">
+        <h2>How can we manage food waste?</h2>
+    </div>
+
+    <div class="container-box">
+        <center><iframe width="585" height="298" src="https://www.youtube.com/embed/KZf9_GdDff0" title="5 tips to reduce food waste" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></center>
+    </div>
+
+</section>
+
+<section class="fwm" id="fwm">
+    <div class="fwm-title">
+        <h2>Together We Can!</h2>
+    </div>
+
+    <div class="container-box">
+        <h4>
+            We are trying our best to solve the problem of food waste and its management. 
+            But we need help from your side as well. Apart from donating food, you can contribute much more towards the society. 
+            <a href="https://economictimes.indiatimes.com/news/economy/indicators/estimated-931-mn-tonnes-of-food-wasted-globally-in-2019-indias-share-68-mn-un-report/articleshow/81345719.cms" target="_blank">Click here</a> 
+            to view how much food was wasted globally in 2019.<br><br>
+             There are few books available on food waste and its management.<br>
+             Some of them are: <br><br>
+            1) Food Waste Management: Principles and Practices - Ram K. Vashist, Neelam Dhingra <br>
+            2) Achieving Zero Food Waste: Strategies and Solutions for Food Service and Retail Operations - Andrew Shakman and Martin K. Law <br> <br>
+            We recommend you to read the books mentioned above and actively participate in food waste awareness campaigns. <br>
+            Lovely Professional University NSS had oorganized food waste awareness week. 
+            <a href="https://happenings.lpu.in/lpu-nss-organizes-food-waste-awareness-week/" target="_blank">Click here</a> to view the details. 
+            <br> <br>
+            <center><img src="./files/3.jpg" alt=""> <img src="./files/4.jpg" alt=""></center> <br>
+            You can find us on Google - 'Food waste management system in India' or 'FoodYard'.
+            
+        </h4>
+     
+    </div>
+
+</section>
+
+<!-- Newsletter -->
+
+<section class="newsletter">
+    <div class="newstext">
+        <h2>Newsletter</h2>
+        <p>Subscribe to Get updates on events, <br> volunteer opportunities and other news.</p>
+    </div>
+
+    <div class="send">
+        <form action="">
+            <input type="email" name="emailid" placeholder="E-mail" required>
+            <input type="submit" value="Subscribe">
+        </form>
+    </div>
+
+</section>
+
+<!-- Footer -->
+
+<section class="footer">
+    <div class="foot">
+        <div class="footer-content">
+            
+            <div class="footlinks">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="./register.html">Donate</a></li>
+                    <li><a href="./about.html">About Us</a></li>
+                    <li><a href="./contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footlinks">
+                <h4>Connect</h4>
+                <div class="social">
+                    <a href="" target="_blank"><i class='bx bxl-facebook'></i></a>
+                    <a href="" target="_blank"><i class='bx bxl-instagram' ></i></a>
+                    <a href="" target="_blank"><i class='bx bxl-twitter' ></i></a>
+                    <a href="" target="_blank"><i class='bx bxl-linkedin' ></i></a>
+                    <a href="" target="_blank"><i class='bx bxl-youtube' ></i></a>
+                    <a href="" target="_blank"><i class='bx bxl-wordpress' ></i></a>
+                    <a href="" target="_blank"><i class='bx bxl-github'></i></a>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="end">
+        <p>Tel: 1800-00-000 Email: support@foodyard.com | Copyright © 2023 FoodYard | All Rights Reserved. <br>Website developed by: Kurmala Chenchu Baba Manikanta | Mohd. Rahil | Lokesh Srireddy</p>
+    </div>
+</section>
+
+
+ 
+</body>
+</html>
